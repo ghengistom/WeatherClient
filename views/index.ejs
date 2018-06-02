@@ -21,10 +21,16 @@
         4. Take these 2 lists and populate graph with them.
     </p>
     <script>
+      var dates = [];
+      var temps = [];
+      for(var i=0; i < results.length; ++i) {
+        dates.push(results[i][0]);
+        temps.push(results[i][1]);
+      }
         TESTER = document.getElementById('tester');
         Plotly.plot( TESTER, [{
-        x: [1, 2, 3, 4, 5],
-        y: [1, 2, 4, 8, 16] }], {
+        x: dates,
+        y: temps }], {
         margin: { t: 0 } } );
       </script>
 
