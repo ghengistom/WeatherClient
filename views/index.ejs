@@ -18,6 +18,8 @@
         2. Set list1 to datetime <br>
         3. Set list2 to temperature <br>
         4. Take these 2 lists and populate graph with them.
+
+        <span id="displayTemp">Temp!</div>
     </p>
     <script>
       //make server get request to pi
@@ -58,7 +60,7 @@ $(document).ready(function() {
           success: function(data) {
               //$("#results").append('all good');
               //alert(data);
-              $("p").append(data).append('<br/>');
+              $("span").appendTo(displayTemp).append(data);
               
           },
            error: function() {
