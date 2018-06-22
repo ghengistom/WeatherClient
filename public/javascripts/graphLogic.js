@@ -1,8 +1,9 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<link rel='stylesheet' href='/stylesheets/style.css' />
+
  //make server get request to pi
- $.get( "http://47.153.171.2:9000/gethistory", function(data) {
+
+  $.get( "http://47.153.171.2:9000/gethistory", function(data) {
 
     results = data;
 
@@ -18,4 +19,5 @@ Plotly.plot( TESTER, [{
 x: dates,
 y: temps }], {
 margin: { t: 0 } } );
-})  
+})     
+
