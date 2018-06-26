@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>The Weather Station</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -12,12 +15,16 @@
   <!--  <script src="javascripts/graphLogic.js" type="text/javascript"></script>   -->
     <h1>Temperature of Ethereum Mining Rig</h1>
     <p>Mining Rig Temperature versus Time</p>
-
+    <div class="row">
+      <div class="col-sm-4" style="background-color:lavender;">Current Temperature</div>
+      <div class="col-sm-4" style="background-color:lavenderblush;">.col-sm-4</div>
+      <div class="col-sm-4" span id="displayTemp" style="background-color:lavender;">Temp!</div>
+    </div>
     <div id="tester" style="width:800px;height:400px;">
       <h2>Current Temperature <br></h2>
       <p>
           
-          <span id="displayTemp">Temp!</span>
+        <!--  <span id="displayTemp">Temp!</span>    -->
       </p>
     </div>
      <script>
