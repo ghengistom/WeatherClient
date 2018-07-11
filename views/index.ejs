@@ -14,9 +14,11 @@
   </head>
   <body>
   <!--  <script src="javascripts/graphLogic.js" type="text/javascript"></script>   -->
-    <h1>Temperature of Ethereum Mining Rig</h1>
-    <p>Mining Rig Temperature versus Time</p>
-    
+  <div class="jumbotron text-center">
+    <h1>Webserver Temperature</h1>
+    <p>Temperature versus Time</p> 
+  </div>
+
     <div id="tester" style="width:800px;height:400px;">
       
      
@@ -71,7 +73,7 @@ $(document).ready(function() {
           success: function(data) {
               //$("#results").append('all good');
               //alert(data);
-              $("span").appendTo(displayTemp).append(data + "<br>");
+              $("span").appendTo(displayTemp).append("<br>" + data + "<br>");
               
 
   // This is a simple *viewmodel* - JavaScript that defines the data and behavior of your UI

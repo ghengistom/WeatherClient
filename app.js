@@ -21,6 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', indexRouter);
+//app.use('/tempStation', tempStationRouter);
 
 app.use('/users', usersRouter);
 
